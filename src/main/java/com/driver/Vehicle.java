@@ -4,6 +4,9 @@ public class Vehicle {
 
     private String name;
     private int currentSpeed;
+
+
+
     private int currentDirection;
 
     private boolean isMove = false;
@@ -27,10 +30,10 @@ public class Vehicle {
         this.currentDirection=direction;
         System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
     }
-    public int speed(int speed){
-        this.currentSpeed+=speed;
-        return this.currentSpeed;
-    }
+//    public int speed(int speed){
+//        this.currentSpeed+=speed;
+//        return this.currentSpeed;
+//    }
 
     public void stop(){
             this.currentSpeed=0;
@@ -42,7 +45,7 @@ public class Vehicle {
     }
 
     public int getCurrentSpeed() {
-        return currentSpeed;
+        return this.currentSpeed;
     }
 
     public int getCurrentDirection() {
@@ -51,5 +54,12 @@ public class Vehicle {
 
     public boolean isMove() {
         return isMove;
+    }
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed += currentSpeed;
+    }
+
+    public void setCurrentDirection(int currentDirection) {
+        this.currentDirection = currentDirection;
     }
 }

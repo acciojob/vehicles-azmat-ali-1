@@ -26,8 +26,9 @@ public class Car extends Vehicle {
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-
-        System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
+        setCurrentSpeed(newSpeed);
+        setCurrentDirection(newDirection);
+        System.out.println("changeSpeed method called - The speed is changed to: " +getCurrentSpeed() + ", and the direction is changed to: " + getCurrentDirection() + " degrees");
     }
 
     public int getWheels() {
