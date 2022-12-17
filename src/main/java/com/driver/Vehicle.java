@@ -7,10 +7,11 @@ public class Vehicle {
     private int currentDirection;
 
     private boolean isMove = false;
+
     public Vehicle(String name) {
-            this.name=name;
-            this.currentSpeed=0;
-            this.currentDirection=0;
+        this.name = name;
+        this.currentSpeed = 0;
+        this.currentDirection = 0;
     }
 
     public void steer(int direction){
@@ -36,4 +37,19 @@ public class Vehicle {
         System.out.println("stop method called - The vehicle is stopped");
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+
+    public boolean isMove() {
+        return isMove;
+    }
 }

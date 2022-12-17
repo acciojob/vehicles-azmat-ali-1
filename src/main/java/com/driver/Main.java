@@ -7,6 +7,5 @@ public class Main {
         mercedes.accelerate(20);
         mercedes.accelerate(-60);
     }
-    Boat a = new Boat("azmat",23);
-    String b  = a.getVehicleName();
+
 }
