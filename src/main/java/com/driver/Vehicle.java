@@ -4,9 +4,6 @@ public class Vehicle {
 
     private String name;
     private int currentSpeed;
-
-
-
     private int currentDirection;
 
     private boolean isMove = false;

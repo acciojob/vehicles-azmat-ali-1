@@ -14,7 +14,7 @@ public class Car extends Vehicle {
         super(name);
         this.wheels=wheels;
         this.doors=doors;
-        this.gears=1;
+        this.gears=gears;
         this.isManual=isManual;
         this.type=type;
         this.seats=seats;
@@ -29,7 +29,7 @@ public class Car extends Vehicle {
         move(newSpeed,newDirection);
         //setCurrentSpeed(newSpeed);
         //setCurrentDirection(newDirection);
-        //System.out.println("changeSpeed method called - The speed is changed to: " +getCurrentSpeed() + ", and the direction is changed to: " + getCurrentDirection() + " degrees");
+        System.out.println("changeSpeed method called - The speed is changed to: " +newSpeed+ ", and the direction is changed to: " + newDirection + " degrees");
     }
 
     public int getWheels() {
