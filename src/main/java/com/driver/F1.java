@@ -19,7 +19,7 @@ public class F1 extends Car {
     }
 
     public void accelerate(int rate){
-        //set the value of new speed by using currentSpeed and rate
+         //set the value of new speed by using currentSpeed and rate
 
 
         /**
@@ -32,8 +32,7 @@ public class F1 extends Car {
          * speed more than 250: gear 6
          */
         //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
-        changeSpeed(rate,getCurrentDirection());
-        int newSpeed = getCurrentSpeed();
+        int newSpeed = rate+getCurrentSpeed();
         if(newSpeed == 0) {
             //Stop the car, set gear as 1
             stop();
@@ -49,7 +48,7 @@ public class F1 extends Car {
         }
         else if(newSpeed >=51 &&100>=newSpeed) {
             changeGear(2);
-            // System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
+           // System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 
         }
         else if(newSpeed >=101 &&150>=newSpeed) {
