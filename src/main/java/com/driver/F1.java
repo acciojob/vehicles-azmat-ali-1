@@ -58,8 +58,8 @@ public class F1 extends Car {
 
         }
         if(newSpeed>0) {
-            //changeSpeed(newSpeed,getCurrentDirection());
-            changeGear(1);
+            changeSpeed(newSpeed,getCurrentDirection());
+            //changeGear(1);
 
             //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 
