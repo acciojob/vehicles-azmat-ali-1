@@ -4,19 +4,10 @@ public class F1 extends Car {
 
     private boolean isManual;
     public F1(String name, boolean isManual) {
-        super(name,4,4,6,isManual,name,4);
+        super(name,4,4,6,isManual,"name",4);
         //Use arbitrary values for parameters which are not mentioned
     }
 
-    @Override
-    public boolean isManual() {
-        return isManual;
-    }
-
-    @Override
-    public void setManual(boolean manual) {
-        isManual = manual;
-    }
 
     public void accelerate(int rate){
          //set the value of new speed by using currentSpeed and rate
@@ -41,7 +32,7 @@ public class F1 extends Car {
         }
         //for all other cases, change the gear accordingly
 
-        else if(newSpeed >250) {
+        if(newSpeed >250) {
             changeGear(6);
             //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 

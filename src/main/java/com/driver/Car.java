@@ -2,7 +2,6 @@ package com.driver;
 
 public class Car extends Vehicle {
 
-    private String name;
     private int wheels;
     private String type;
     private int doors;
@@ -14,7 +13,6 @@ public class Car extends Vehicle {
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
         super(name);
-        this.name=name;
         this.wheels=wheels;
         this.doors=doors;
         this.gears=gears;
@@ -90,10 +88,5 @@ public class Car extends Vehicle {
 
     public void setSeats(int seats) {
         this.seats = seats;
-    }
-
-    @Override
-    public String getName() {
-        return name;
     }
 }
