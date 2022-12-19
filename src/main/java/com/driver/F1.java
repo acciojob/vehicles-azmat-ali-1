@@ -41,33 +41,33 @@ public class F1 extends Car {
         }
         //for all other cases, change the gear accordingly
 
-        else if(newSpeed >=1 &&50>=newSpeed) {
-            changeGear(1);
+        else if(newSpeed >250) {
+            changeGear(6);
             //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 
         }
-        else if(newSpeed >=51 &&100>=newSpeed) {
-            changeGear(2);
+        else if(newSpeed >200) {
+            changeGear(5);
            // System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 
         }
-        else if(newSpeed >=101 &&150>=newSpeed) {
-            changeGear(3);
-            //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
-
-        }
-        else if(newSpeed >=151 &&200>=newSpeed) {
+        else if(newSpeed >150) {
             changeGear(4);
             //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 
         }
-        else if(newSpeed >=201 &&250>=newSpeed) {
+        else if(newSpeed >100) {
+            changeGear(3);
+            //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
+
+        }
+        else if(newSpeed >50) {
             changeGear(5);
             //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 
         }
-        else if(250<newSpeed) {
-            changeGear(6);
+        if(newSpeed>0) {
+            changeSpeed(newSpeed,getCurrentDirection());
             //System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed);
 
         }
